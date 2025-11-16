@@ -10,7 +10,7 @@ body:
       description: What theme do you want the mod to be based on?
       placeholder: Tell us what you want!
       value: |
-        I want the mod to be based on Art Deco.
+        I want the mod to be based on Art Deco. (remove me)
     validations:
       required: true
 
