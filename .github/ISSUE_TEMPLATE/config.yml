@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Feature Request Form
+    url: https://github.com/Addi3/Comfort-Series-Page/issues/new?template=feature_request.yml
+    about: Suggest a new feature or enhancement.
