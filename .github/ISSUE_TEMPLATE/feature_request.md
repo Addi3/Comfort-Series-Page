@@ -1,20 +1,29 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+name: Feature Request
+description: File a feature request.
+labels: ["T: New feature", "S: Untriaged"]
+type: "Feature"
+body:
+- type: textarea
+  id: description
+  attributes:
+    label: Description
+    description: What theme do you want the mod to be based on?
+    placeholder: Tell us what you want!
+    value: |
+      I want the mod to be based on Art Deco.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Images / insperation & related resources
+    description: |
+      Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: true
+- type: checkboxes
+  attributes:
+    label: I've checked the feature requests...
+    options:
+      - label: |
+          ...and this theme was not requested before.
+        required: true
