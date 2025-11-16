@@ -1,55 +1,61 @@
 name: Bug Report
 description: File a bug report.
 labels: ["T: Bugfix", "Issue: Needs Replicating", "S: Untriaged"]
-type: "Bug"
+
 body:
-- type: textarea
-  id: what-happened
-  attributes:
-    label: What happened?
-    description: Also tell us, what did you expect to happen?
-    placeholder: Tell us what you see!
-    value: |
-      This happened!
-      
-      Steps to reproduce the behavior:
-      1. Go to '...'
-      2. Click on '....'
-      3. Place down '...'
-      4. See error
-  validations:
-    required: true
-- type: dropdown
-  id: version
-  attributes:
-    label: Version
-    description: What mod you're running?
-    options:
-    - Mod Name
-    - Mod Name2
-    - Mod Name3
-    - Mod Name4
-    default: 1
-  validations:
-    required: true
-- type: input
-  id: version
-  attributes:
-    label: Build number 
-    description: What build are you running? (The version of the mod you are using).
-    placeholder: "release-1.1.0i"
-- type: textarea
-  attributes:
-    label: Logs & screenshots
-    description: |
-      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
-  validations:
-    required: false
-- type: checkboxes
-  attributes:
-    label: I've checked the reported issues...
-    options:
-      - label: |
-          ...and it was not reported before.
-        required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: |
+        This happened!
+        
+        Steps to reproduce the behavior:
+        1. Go to '...'
+        2. Click on '....'
+        3. Place down '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mod_version
+    attributes:
+      label: Version
+      description: What mod you're running?
+      options:
+        - Mod Name
+        - Mod Name2
+        - Mod Name3
+        - Mod Name4
+      default: Mod Name
+    validations:
+      required: true
+
+  - type: input
+    id: build_number
+    attributes:
+      label: Build number
+      description: What build are you running? (The version of the mod you are using).
+      placeholder: "release-1.1.0i"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & screenshots
+      description: |
+        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checked_issues
+    attributes:
+      label: I've checked the reported issues...
+      options:
+        - label: |
+            ...and it was not reported before.
+          required: true
 
