@@ -1,6 +1,5 @@
 name: Bug Report
 description: Report a bug, error, or unintended behavior.
-title: "[Bug] "
 labels: ["T: Bugfix", "Issue: Needs Replicating", "S: Untriaged"]
 
 body:

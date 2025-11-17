@@ -1,6 +1,5 @@
 name: Feature Request
 description: Suggest a new theme or feature for the mod.
-title: "[Feature] "
 labels: ["T: New feature", "S: Untriaged"]
 
 body:
