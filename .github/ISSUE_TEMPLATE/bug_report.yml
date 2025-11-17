@@ -38,8 +38,11 @@ body:
     id: steps
     attributes:
       label: Steps to Reproduce
-      description: "Provide detailed steps to reproduce the bug."
-      placeholder: "1. Open the app\n2. Go to Settings\n3. Crash occurs"
+      description: Provide detailed steps to reproduce the bug.
+      placeholder: |
+        1. Open the app
+        2. Go to Settings
+        3. Crash occurs
     validations:
       required: true
 
@@ -47,7 +50,7 @@ body:
     id: logs
     attributes:
       label: Logs & Screenshots
-      description: "Attach screenshots or log files to help debug."
+      description: Attach screenshots or log files to help debug.
       placeholder: "Optional"
     validations:
       required: false
