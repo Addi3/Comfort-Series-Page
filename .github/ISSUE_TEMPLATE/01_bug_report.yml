@@ -13,6 +13,18 @@ body:
     validations:
       required: true
 
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide detailed steps to reproduce the bug.
+      placeholder: |
+        1. Do this
+        2. Do that
+        3. Issue occurs
+    validations:
+      required: true
+
   - type: dropdown
     id: mod_version
     attributes:
@@ -35,25 +47,13 @@ body:
       placeholder: "release-1.1.0"
 
   - type: textarea
-    id: steps
-    attributes:
-      label: Steps to Reproduce
-      description: Provide detailed steps to reproduce the bug.
-      placeholder: |
-        1. Do this
-        2. Do that
-        3. Issue occurs
-    validations:
-      required: true
-
-  - type: textarea
     id: logs
     attributes:
       label: Logs & Screenshots
       description: Attach screenshots or log files to help debug.
-      placeholder: "Optional"
+      placeholder: "Required!"
     validations:
-      required: false
+      required: true
 
   - type: checkboxes
     id: unique_check
