@@ -9,7 +9,7 @@ body:
     attributes:
       label: What happened?
       description: Explain the issue and what you expected to happen.
-      placeholder: "E.g., The app crashes when opening settings."
+      placeholder: "E.g., The game crashes when doing ..."
     validations:
       required: true
 
@@ -40,9 +40,9 @@ body:
       label: Steps to Reproduce
       description: Provide detailed steps to reproduce the bug.
       placeholder: |
-        1. Open the app
-        2. Go to Settings
-        3. Crash occurs
+        1. Do this
+        2. Do that
+        3. Issue occurs
     validations:
       required: true
 
