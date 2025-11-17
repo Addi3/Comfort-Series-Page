@@ -23,7 +23,7 @@ body:
         - Mod Name2
         - Mod Name3
         - Mod Name4
-      default: Mod Name
+      default: 0   
     validations:
       required: true
 
