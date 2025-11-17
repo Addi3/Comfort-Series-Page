@@ -45,6 +45,8 @@ body:
       label: Build Number
       description: Specific build number of the mod.
       placeholder: "release-1.1.0"
+    validations:
+      required: true
 
   - type: textarea
     id: logs
