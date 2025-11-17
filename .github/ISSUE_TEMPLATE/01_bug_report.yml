@@ -1,5 +1,6 @@
 name: Bug Report
 description: Report a bug, error, or unintended behavior.
+title: "[Bug] "
 labels: ["T: Bugfix", "Issue: Needs Replicating", "S: Untriaged"]
 
 body:
@@ -31,7 +32,7 @@ body:
     attributes:
       label: Build Number
       description: Specific build number of the mod.
-      placeholder: "release-1.1.0i"
+      placeholder: "release-1.1.0"
 
   - type: textarea
     id: steps

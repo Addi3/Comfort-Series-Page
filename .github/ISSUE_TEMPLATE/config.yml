@@ -2,7 +2,7 @@ blank_issues_enabled: false
 
 contact_links: 
 - name: Bug Report 
-url: https://github.com/Addi3/Comfort-Series-Page/issues/new?template=01_bug_report.yml 
+url: https://github.com/Addi3/Comfort-Series-Page/issues/new?template=01_bug_report.yml
 
 - name: Feature Request 
 url: https://github.com/Addi3/Comfort-Series-Page/issues/new?template=02_feature_request.yml
