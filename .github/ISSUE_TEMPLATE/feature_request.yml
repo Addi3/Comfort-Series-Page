@@ -1,33 +1,41 @@
 name: Feature Request
-description: File a feature request.
+description: Suggest a new theme or feature for the mod.
+title: "[Feature] "
 labels: ["T: New feature", "S: Untriaged"]
 
 body:
   - type: textarea
-    id: description
+    id: summary
     attributes:
-      label: Description
-      description: What theme do you want the mod to be based on?
-      placeholder: Tell us what you want!
-      value: |
-        I want the mod to be based on Art Deco. (remove me)
+      label: Feature Summary
+      description: Provide a short description of the feature or theme you want.
+      placeholder: "E.g., Add Art Deco theme"
     validations:
       required: true
 
   - type: textarea
-    id: inspiration
+    id: details
     attributes:
-      label: Images / inspiration & related resources
-      description: |
-        Tip: You can attach images by clicking this area to highlight it and then dragging files in.
+      label: Detailed Explanation
+      description: Explain the feature in more detail. Why is it useful or interesting?
+      placeholder: "Describe how this feature or theme would work..."
     validations:
       required: true
 
-  - type: checkboxes
-    id: checks
+  - type: textarea
+    id: resources
     attributes:
-      label: I've checked the feature requests...
+      label: Images / Inspiration & Related Resources
+      description: Attach images, references, or links to help illustrate your idea.
+      placeholder: "Optional"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: unique_check
+    attributes:
+      label: I have checked existing feature requests...
       options:
-        - label: |
-            ...and this theme was not requested before.
+        - label: "...and this feature or theme was not requested before."
           required: true
+
